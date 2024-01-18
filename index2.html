@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>District Boundaries in Leaflet</title>
+  <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
+  <script src="node_modules/leaflet/dist/leaflet.js"></script>
+  <script src="node_modules/@turf/turf/index.js"></script>
+  <script src="node_modules/turf-buffer/index.js"></script>
+  <script src="node_modules/turf-centroid/index.js"></script>
+  <script src="node_modules/@turf/turf/turf.min.js"></script>
+  <script src="./main.js"></script>
+  <style>
+    body, html {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+
+    #map {
+      height: 100%;
+      width: 100%;
+    }
+
+
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="map"></div>
+
+<div class="control-container">
+  <input type="text" id="districtInput" placeholder="Enter district name" style="background-color:#F8EDFF; border: none; height:30px;" >
+<button onclick="highlightDistrict()">Search District</button>
+</div>
+
+
+</body>
+</html>
